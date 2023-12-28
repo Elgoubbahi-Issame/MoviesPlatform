@@ -1,0 +1,235 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}*/
+
+body{
+/* background-image: linear-gradient(rgba(48, 78, 109, 0.486),rgba(33, 36, 58, 0.548)),url(./spider.jpg);
+background-position: center;
+background-size: cover; */
+}/*
+.logo{
+    width: 150;
+
+}*/
+/* .header{
+     margin: 400px; 
+    height: 10%;
+}  */
+.movie-detail{
+    margin: 3% 80px ;
+    padding: 20px;
+}
+
+.left-box{
+    margin-top: 15%;
+    /* margin: 15% 0 0 8% ; */
+    
+    color: #fff;
+}
+.casting img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.casting img:hover{
+    transform: translateY(-8px) translateX(3px);
+}
+.left-box a{
+    text-decoration:  none !important;
+    border-radius: 30px;
+    padding: 7px 20px;
+    margin-top: 20px;
+    color: #fff !important;
+    background: rgb(87, 85, 85);
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 10px;
+    border: 3px solid #fff;
+    transition: 1s;
+}
+.left-box a:hover{
+    color:  rgb(87, 85, 85) !important;
+    background: #fff;
+    /* border: 3px solid rgb(87, 85, 85); */
+    /* width: 200px; */
+    /* transform:scaleX(10px) ; */
+    /* transition: 100ms; */
+    /* transition: 1 s ; */
+    /* transform: translateX(10px); */
+
+}
+.fas ,.fab{
+    margin:0 5px ;
+}
+.movie-imag{
+    margin: 25% 0% 0 0;
+    height: 370px;
+    width: 70%;
+    border: 3px solid #fff;
+    box-shadow: -4px 4px 5px 0 #000;
+}
+/* --------------------------------- */
+
+
+.series img{
+width: 100%;
+ border-radius: 5px; 
+ margin: 40px 0;
+transition: 1s;
+}
+
+.series img:hover{
+    transform: translateY(-10px);
+    
+}
+
+/* ------------------------------- */
+.watch a{
+    text-decoration:  none !important;
+    width: 150px;
+    border-radius: 30px;
+    padding: 7px 20px;
+    margin-top: 35px;
+    color: #fff !important;
+    background: rgb(87, 85, 85);
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 10px;
+    border: 3px solid #fff;
+    transition: 1s;
+}
+.watch h1{
+    margin: 30px;
+}
+.watch a:hover{
+    color:  rgb(87, 85, 85) !important;
+    background: #fff;
+}
+.watch{
+    /* margin: 20px 0; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.video-container2{
+    width: 100%;
+    height: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.video-container2 embed{
+    width: 100%;
+    border: 3px solid #fff;
+    height: 400px;
+    max-width: 800px;
+    max-height: 500px;
+    /* transform: scale(0); */
+    box-shadow:  0 20px 20px rgba(0, 0, 0, 0.39);
+    outline: none;
+    /* transition: all 0.3s; */
+}
+.video-container{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: rgba(3, 11, 46, 0.452);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+.video-container .close{
+    
+    position: absolute;
+    top: 10%;
+    right: 25px;
+    font-size: 25px;
+    cursor: pointer ;
+}
+.video-container embed{
+    width: 70%;
+    height: 70%;
+    max-width: 800px;
+    transform: scale(0);
+    box-shadow:  0 20px 20px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: all 0.3s;
+}
+.video-container.show{
+    pointer-events: all;
+    opacity: 1;
+}
+.video-container.show embed{
+    transform: scale(1);
+}
+.btn1{
+    cursor: pointer;
+}
+.cap{
+   height: 40px;
+   width: 200px;
+    /* flex-basis: 32%; */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+}
+.cap img{
+/* width: 100%; */
+position: absolute;
+top: 0;
+left: 0;
+}
+.pop:hover{
+    background-color: rgba(6, 52, 255, 0.329);
+
+    /* width: 100px; */
+}
+.pop p{
+    position: absolute;
+    left: 25%;
+    /* bottom: 0; */
+    font-size: 10px;
+    font-weight: 500;
+    opacity: 0;
+}
+.pop:hover p{
+    opacity: 1;
+    /* bottom: 20%; */
+}
+/* .casting img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 1s;
+} */
+
+
+.pop{
+    height: 100%;
+    width: 100%;
+    /* border-radius: 50%; */
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: transparent;
+    /* background-color: rgba(255, 97, 6, 0.329); */
+    
+    transition: 0.5s;
+}
